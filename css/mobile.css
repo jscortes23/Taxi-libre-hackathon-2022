@@ -6,6 +6,12 @@
 5. Otros
 */
 
+/* GLOBAL VARIABLES */
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #C3DC00;
+}
+
 /* RESET DEFAULT BROWSER STYLE */
 * {
     box-sizing: border-box;
@@ -16,4 +22,29 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+}
+
+/* SECCTION HEADER 
+******************************************************************************/
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 4px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+header .btn-menu {
+    width: 45px;
+    height: 45px;
+    margin-left: 16px;
+    background-image: url('/assets/icons/menu-hamburguesa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
 }
