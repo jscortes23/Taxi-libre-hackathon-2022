@@ -5,3 +5,15 @@
 4. Visuales
 5. Otros
 */
+
+/* RESET DEFAULT BROWSER STYLE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
