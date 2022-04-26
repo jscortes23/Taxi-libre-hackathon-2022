@@ -231,3 +231,41 @@ main .main-start-container {
     margin-bottom: 20px;
     margin-left: 28px;
 }
+
+/* SECTION AWARDS 
+***********************************************************************************/
+
+.main-awards-container {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+}
+
+.main-awards-container .awards__title {
+    font-size: var(--x-lg);
+    font-weight: 600;
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 5.4rem;
+    margin-bottom: 20px;
+}
+
+.main-awards-container .awards__info {
+    font-size: var(--md);
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.awards-position .position__number {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+}
+
+.awards-position .position__list {
+    font-size: var(--md);
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    margin-left: 28px;
+}
