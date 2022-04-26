@@ -39,6 +39,7 @@ header {
     padding: 4px 0px;
     position: sticky;
     top: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,10 +98,6 @@ main .main-start-container {
     margin-bottom: 20px;
 }
 
-.main-start-container .btn-primary {
-    margin: 0 auto;
-}
-
 .btn-primary {
     padding: 12px 16px;
     background-color: var(--secondary-color);
@@ -116,19 +113,56 @@ main .main-start-container {
 .main-when-is-container {
     width: 100%;
     height: auto;
+    padding: 0 16px;
+    position: relative;
     background-color: var(--primary-color);
     color: var(--font-color);
 }
 
 .main-when-is-container .when-is__title {
+    padding-top: 20px;
     font-size: var(--x-lg);
-    font-weight: 600;
     background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(195,220,0,1) 48%);
     background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
-    line-height: 4.8rem;
     margin-bottom: 20px;
+}
+
+.main-when-is-container .when-is__info {
+    font-size: var(--md);
+    line-height: 2.6rem;
+}
+
+.main-when-is-container .btn-primary {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 80px);
+}
+
+.main-when-is-container .countdown-container {
+    width: 100%;
+    min-height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.countdown-container .countdown-content{
+    text-align: center;
+    margin: 0 4px;
+}
+
+.countdown-container .countdown__text {
+    font-size: var(--lg);
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 4px;
+}
+
+.countdown-container .countdown__number {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--secondary-color);
 }
 
 /* SECTION WHERE IS
@@ -143,6 +177,7 @@ main .main-start-container {
 .main-where-is-container .where-is__title {
     font-size: var(--x-lg);
     font-weight: 600;
+    padding-top: 40px;
     background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
     background-clip: border-box;
     -webkit-background-clip: text;
