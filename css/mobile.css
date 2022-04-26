@@ -108,3 +108,35 @@ main .main-start-container {
     color: var(--primary-color);
     border-radius: 12px;
 }
+
+/* SECTION WHEN IS
+************************************************************************/
+
+.main-when-is-container {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+}
+
+.main-when-is-container .when-is__title {
+    font-size: var(--x-lg);
+    font-weight: 600;
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 4.8rem;
+    margin-bottom: 20px;
+}
+
+.main-when-is-container .when-is__info {
+    font-size: var(--md);
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.main-when-is-container .when-is__list {
+    font-size: var(--md);
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    margin-left: 28px;
+}
