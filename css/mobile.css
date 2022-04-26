@@ -83,6 +83,7 @@ main .main-start-container {
     font-size: var(--x-lg);
     font-weight: 600;
     background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
+    background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
     line-height: 4.8rem;
@@ -109,32 +110,54 @@ main .main-start-container {
     border-radius: 12px;
 }
 
-/* SECTION WHEN IS
+/* SECTION WHEN IS 
 ************************************************************************/
 
 .main-when-is-container {
     width: 100%;
     height: auto;
-    padding: 0 16px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
 }
 
 .main-when-is-container .when-is__title {
     font-size: var(--x-lg);
     font-weight: 600;
-    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
+    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(195,220,0,1) 48%);
+    background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
     line-height: 4.8rem;
     margin-bottom: 20px;
 }
 
-.main-when-is-container .when-is__info {
+/* SECTION WHERE IS
+************************************************************************/
+
+.main-where-is-container {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+}
+
+.main-where-is-container .where-is__title {
+    font-size: var(--x-lg);
+    font-weight: 600;
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 4.8rem;
+    margin-bottom: 20px;
+}
+
+.main-where-is-container .where-is__info {
     font-size: var(--md);
     line-height: 2.6rem;
     margin-bottom: 20px;
 }
 
-.main-when-is-container .when-is__list {
+.main-where-is-container .where-is__list {
     font-size: var(--md);
     line-height: 2.6rem;
     margin-bottom: 20px;
