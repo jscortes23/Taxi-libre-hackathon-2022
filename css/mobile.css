@@ -277,6 +277,7 @@ main .main-start-container {
     width: 100%;
     height: auto;
     padding: 0 16px;
+    margin-bottom: 40px;
 }
 
 .main-sponsor-container .sponsor__title {
@@ -325,4 +326,140 @@ main .main-start-container {
 
 	95% { transform: translateX(-500%); }
 	100% { transform: translateX(-500%); }
+}
+
+/* SECTION FOOTER 
+************************************************************************/
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+footer .footer-up {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-up .footer-about {
+    margin: 20px 0;
+}
+
+.footer-about .about__title {
+    font-size: var(--lg);
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+
+.footer-about .about__info {
+    font-size: var(--sm);
+    line-height: 2rem;
+}
+
+.footer-up .footer-social-media {
+    margin: 20px 0;
+}
+
+.footer-social-media .social-media__title {
+    font-size: var(--lg);
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+
+.footer-social-media .social-media__list {
+    list-style: none;
+}
+
+.list-item > a {
+    max-width: 210px;
+    display: flex;
+    align-items: center;
+    font-size: var(--sm);
+    color: var(--font-color);
+    margin-bottom: 12px;
+}
+.list-item .list-icon {
+    padding: 14px;
+    margin-right: 12px;
+}
+
+.list-item .icon-facebook {
+    background-image: url('/assets/icons/logo-facebook.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.list-item .icon-twitter {
+    background-image: url('/assets/icons/logo-twitter.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.list-item .icon-instagram {
+    background-image: url('/assets/icons/logo-instagram.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.list-item .icon-youtube {
+    background-image: url('/assets/icons/logo-youtube.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.list-item .icon-tiktok {
+    background-image: url('/assets/icons/logo-tiktok.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.footer-up .footer-contact-us {
+    margin: 20px 0;
+}
+
+.footer-contact-us .contact-us__title {
+    font-size: var(--lg);
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+
+.footer-contact-us .contact-us__list {
+    list-style: none;
+}
+
+.contact-us__list .list-item {
+    margin-bottom: 12px;
+}
+
+.list-item .item__title {
+    font-size: var(--sm);
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+
+.list-item iframe {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.list-item .item__info {
+    font-size: var(--sm);
+    line-height: 2rem;
+}
+
+.item__info a[href*="tel:+"] {
+    color: var(--font-color);
+    font-weight: bold;
 }
