@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 540px)" />
+    <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 1060px)" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
@@ -93,11 +94,14 @@
     </header>
     <main>
       <section class="main-banner-container">
-        <img
-          class="banner__img"
-          src="/assets/imgs/hackathon-banner.png"
-          alt="Imagen del banner"
-        />
+        <picture>
+          <!-- <source media="(min-width: 80px)" srcset="/assets/imgs/hackathon-banner-desktop.png" alt="Imagen del banner"> -->
+          <img
+            class="banner__img"
+            src="/assets/imgs/hackathon-banner.png"
+            alt="Imagen del banner"
+          />
+        </picture>
       </section>
       <section id="start" class="main-start-container">
         <h1 class="start__title">Hackathon 2022</h1>
@@ -118,12 +122,12 @@
       <section id="when" class="main-when-is-container">
         <h2 class="when-is__title">¿Cuándo inicia?</h2>
         <p class="when-is__info">
-          Este evento virtual se llevará a cabo del 10 al 12 de junio de 2022.
+          Este evento virtual se llevará a cabo del <strong> 10 al 12 de junio de 2022 </strong>.
         </p>
         <br />
         <p class="when-is__info">
           Si estas en el mundo de la tecnología esta es una oportunidad que no
-          debes dejar pasar.
+          debes dejar pasar. ¡Inscribite!
         </p>
         <div class="countdown-container">
           <div class="countdown-content">
@@ -510,6 +514,7 @@
           <p class="about__info">
             Somos una compañía que va en pro de facilitar la prestación de un
             servicio de transporte legal, seguro, cómodo y eficiente.
+            Incorporamos tecnología para hacer cada viaje más seguro. Además, tomamos acciones para mitigar el contagio de Covid-19.
           </p>
         </div>
         <div class="footer-social-media">

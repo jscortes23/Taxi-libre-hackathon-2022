@@ -11,7 +11,7 @@
     --font-color: #FFFFFF;
     --primary-color: #000000;
     --secondary-color: #C3DC00;
-    --x-lg: 5rem;
+    --x-lg: 4.5rem;
     --lg: 1.8rem;
     --md: 1.6rem;
     --sm: 1.4rem;
@@ -145,6 +145,10 @@ main .main-start-container {
 .main-when-is-container .when-is__info {
     font-size: var(--md);
     line-height: 2.6rem;
+}
+
+.when-is__info strong {
+    color: var(--secondary-color);
 }
 
 .main-when-is-container .btn-primary {
@@ -441,7 +445,8 @@ footer .footer-up {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(287px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(287px, 400px));
+    place-content: center;
 }
 
 .footer-up .footer-about {

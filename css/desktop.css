@@ -1,0 +1,58 @@
+/* SECTION HEADER 
+************************************************************************/
+
+header {
+    margin-bottom: 46px;
+}
+
+/* SECTION MAIN 
+************************************************************************/
+
+main {
+    width: 70%;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+/* SECTION BANNER MAIN 
+************************************************************************/
+
+.main-banner-container {
+    width: 40%;
+    order: 2;
+}
+
+.main-banner-container .banner__img {
+    height: 100%;
+    object-fit: fill;
+    margin: 0;   
+}
+/* SECTION START MAIN 
+************************************************************************/
+
+main .main-start-container {
+    width: 60%;
+    margin: 0;
+    align-items: center;
+    order: 1;
+}
+
+/* SECTION WHEN MAIN 
+************************************************************************/
+
+.main-when-is-container {
+    width: 100%;
+    margin-bottom: 46px;
+    order: 3;   
+}
+
+/* SECTION WHERE MAIN 
+************************************************************************/
+
+.main-where-is-container {
+    width: 50%;
+    order: 4;
+}
+
+/* SECTION ASIDE 
+************************************************************************/

@@ -26,6 +26,7 @@ header .menu-header {
 }
 
 .menu-item a:hover {
+    color: var(--secondary-color);
     border-bottom: 4px solid var(--secondary-color);
 }
 
