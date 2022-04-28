@@ -1,3 +1,37 @@
+/* SECTION HEADER 
+************************************************************************/
+header {
+    justify-content: space-around;
+}
+
+header .btn-menu {
+    display: none;
+}
+
+header .menu-header {
+    display: block;
+}
+
+.menu-header .nav-menu {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: var(--md);
+}
+
+.menu-item > a {
+    padding: 12px;
+    color: var(--font-color);
+}
+
+.menu-item a:hover {
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+/* SECTION MAIN 
+************************************************************************/
+
 main {
     width: 90%;
     flex-flow: row wrap;

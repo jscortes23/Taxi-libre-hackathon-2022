@@ -43,20 +43,26 @@ header {
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #000000;
 }
 
 header .btn-menu {
     width: 45px;
     height: 45px;
-    margin-left: 16px;
+    margin-right: 16px;
     background-image: url('/assets/icons/menu-hamburguesa.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60% 60%;
     background-color: var(--secondary-color);
     border-radius: 50%;
+}
+
+/* SECTION MENU HEADER 
+************************************************************************/
+header .menu-header {
+    display: none;
 }
 
 /* SECTION BANNER MAIN 
@@ -283,12 +289,14 @@ main .main-start-container {
 .main-form-container {
     width: 100%;
     height: auto;
-    padding: 40px 16px;
+    padding: 40px;
     background-color: var(--primary-color);
     color: var(--font-color);
 }
 
 .main-form-container .form-register {
+    max-width: 690px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }

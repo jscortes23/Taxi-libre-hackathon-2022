@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/mobile.css" />
-    <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 590px)" />
+    <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 540px)" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
@@ -74,6 +74,22 @@
     <header>
       <img src="/assets/imgs/logo.png" alt="Logo de taxi libre" />
       <span class="btn-menu"></span>
+      <nav class="menu-header">
+        <ul class="nav-menu">
+          <li class="menu-item">
+            <a href="#start">Inicio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#when">Fecha</a>
+          </li>
+          <li class="menu-item">
+            <a href="#awards">Premios</a>
+          </li>
+          <li class="menu-item">
+            <a href="#register">Inscripción</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="main-banner-container">
@@ -83,7 +99,7 @@
           alt="Imagen del banner"
         />
       </section>
-      <section class="main-start-container">
+      <section id="start" class="main-start-container">
         <h1 class="start__title">Hackathon 2022</h1>
         <p class="start__info">
           Es una maratón de desarrollo virtual donde se reunirán programadores,
@@ -99,7 +115,7 @@
           servicios de Taxis Libres y de nuestros patrocinadores y aliados.
         </p>
       </section>
-      <section class="main-when-is-container">
+      <section id="when" class="main-when-is-container">
         <h2 class="when-is__title">¿Cuándo inicia?</h2>
         <p class="when-is__info">
           Este evento virtual se llevará a cabo del 10 al 12 de junio de 2022.
@@ -185,7 +201,7 @@
           </li>
         </ul>
       </section>
-      <section class="main-awards-container">
+      <section id="awards" class="main-awards-container">
         <h2 class="awards__title">¿Cuáles serán los premios?</h2>
         <p class="awards__info">
           Se seleccionarán y reconocerán tres equipos finalistas y el mejor
