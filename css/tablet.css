@@ -1,0 +1,135 @@
+main {
+    width: 90%;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+/* SECTION BANNER MAIN 
+************************************************************************/
+
+.main-banner-container {
+    order: 1;
+}
+
+/* SECTION START MAIN 
+************************************************************************/
+
+main .main-start-container {
+    order: 2;
+}
+
+/* SECTION WHEN MAIN 
+************************************************************************/
+
+.main-when-is-container {
+    order: 5;   
+}
+
+/* SECTION WHERE MAIN 
+************************************************************************/
+
+.main-where-is-container {
+    width: 50%;
+    order: 3;
+}
+
+.main-where-is-container .where-is__title {
+    padding: 0;
+    margin-bottom: 44px;
+}
+
+.main-where-is-container .where-is__info {
+    text-align: justify;
+}
+
+/* SECTION OBJECTIVE MAIN 
+************************************************************************/
+
+.main-objective-container {
+    width: 50%;
+    order: 4;
+    border-left: 1px solid var(--secondary-color);
+    margin-bottom: 46px;
+}
+
+.main-objective-container .objective__info {
+    text-align: justify;
+}
+
+/* SECTION AWARDS 
+************************************************************************/
+
+.main-awards-container {
+    order: 6;
+    margin-top: 46px;
+}
+
+.main-awards-container .awards-position-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row wrap;
+}
+
+.awards-position .position__number {
+    text-align: center;
+}
+
+.awards-position .number-one::before {
+    display: block;
+    content: '';
+    background-image: url(/assets/icons//awards/medalla-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin: 12px auto;
+}
+
+.awards-position .number-two::before {
+    display: block;
+    content: '';
+    background-image: url(/assets/icons/awards/medalla-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin: 12px auto;
+}
+
+.awards-position .number-three::before {
+    display: block;
+    content: '';
+    background-image: url(/assets/icons//awards/medalla-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin: 12px auto;
+}
+/* SECTION FORM MAIN 
+************************************************************************/
+
+.main-form-container {
+    order: 7;
+}
+
+/* SECTION ASIDE 
+************************************************************************/
+
+aside {
+    order: 8;
+}
+
+/* SECTION FOOTER 
+************************************************************************/
+
+footer {
+    order: 9;
+}
+
+footer .footer-up {
+    gap: 24px;
+}

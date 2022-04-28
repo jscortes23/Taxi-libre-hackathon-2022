@@ -9,15 +9,66 @@
       name="description"
       content="La Hackathon Taxis Libres, un evento gratuito y 100% digital que dio solución a una serie de retos reales sobre movilidad en el país y en el que participaron más de 540 personas de diferentes regiones de Colombia y del mundo. Al final, fueron entregados más de $25.000 USD en beneficios."
     />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/favicon.png"
+      type="image/x-icon"
+    />
     <meta name="robots" content="index,follow" />
-    <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 590px)" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
     <script src="/js/countdown.js" defer></script>
+    <meta
+      property="og:description"
+      content="Conoce el evento que apoyará el talento del país al crear nuevos espacios para desarrollar sus ideas y demostrar toda su creatividad."
+    />
+    <meta property="og:title" content="Taxis Libres | Hackathon 2022" />
+    <meta
+      property="og:description"
+      content="Conoce el evento que apoyará el talento del país al crear nuevos espacios para desarrollar sus ideas y demostrar toda su creatividad."
+    />
+    <meta
+      property="og:url"
+      content="https://www.taxislibres.com.co/blog/hackathon-taxis-libres"
+    />
+    <meta property="og:site_name" content="www.taxislibres.com.co" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_publisher"
+      content="https://www.facebook.com/taxislibrescol"
+    />
+    <meta
+      property="og:image"
+      content="https://www.taxislibres.com.co/public/assets/images/blog/meta/share-hackathon.jpg"
+    />
+    <meta
+      name="twitter:description"
+      content="Conoce el evento que apoyará el talento del país al crear nuevos espacios para desarrollar sus ideas y demostrar toda su creatividad."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.taxislibres.com.co/public/assets/images/blog/meta/share-hackathon.jpg"
+    />
+    <meta
+      name="twitter:url"
+      content="https://www.taxislibres.com.co/blog/hackathon-taxis-libres"
+    />
+    <meta name="twitter:creator" content="@TaxisLibresCol" />
+    <meta name="twitter:via" content="TaxisLibresCol" />
+    <meta
+      name="twitter:card"
+      content="https://www.taxislibres.com.co/public/assets/images/blog/meta/share-hackathon.jpg"
+    />
+    <meta
+      itemprop="image"
+      content="https://www.taxislibres.com.co/public/assets/images/blog/meta/share-hackathon.jpg"
+    />
   </head>
   <body>
     <header>
@@ -25,12 +76,14 @@
       <span class="btn-menu"></span>
     </header>
     <main>
-      <section class="main-start-container">
+      <section class="main-banner-container">
         <img
-          class="start__img"
+          class="banner__img"
           src="/assets/imgs/hackathon-banner.png"
           alt="Imagen del banner"
         />
+      </section>
+      <section class="main-start-container">
         <h1 class="start__title">Hackathon 2022</h1>
         <p class="start__info">
           Es una maratón de desarrollo virtual donde se reunirán programadores,
@@ -101,9 +154,7 @@
         </ul>
       </section>
       <section class="main-objective-container">
-        <h2 class="objective__title">
-          ¿Cuál es el objetivo de la Hackathon de Taxis Libres?
-        </h2>
+        <h2 class="objective__title">¿Cuál es el objetivo?</h2>
         <p class="objective__info">
           Buscamos generar espacios creativos
           <strong>
@@ -135,43 +186,43 @@
         </ul>
       </section>
       <section class="main-awards-container">
-        <h2 class="awards__title">
-          ¿Cuáles serán los beneficios para los equipos ganadores?
-        </h2>
+        <h2 class="awards__title">¿Cuáles serán los premios?</h2>
         <p class="awards__info">
           Se seleccionarán y reconocerán tres equipos finalistas y el mejor
           talento individual. Los beneficios suman $25.000 USD.
         </p>
-        <article class="awards-position">
-          <h3 class="position__number">Primer lugar</h3>
-          <ul class="position__list">
-            <li class="list-item">$5.000.000 COP.</li>
-            <li class="list-item">$10.000 USD IBM Cloud.</li>
-            <li class="list-item">Un teléfono Huawei.</li>
-            <li class="list-item">50 viajes en taxi ($15.000 COP c/u).</li>
-            <li class="list-item">1 año de licencia para Platzi.</li>
-            <li class="list-item">6 meses de oficinas.</li>
-          </ul>
-        </article>
-        <article class="awards-position">
-          <h3 class="position__number">Segundo lugar</h3>
-          <ul class="position__list">
-            <li class="list-item">$3.000.000 COP.</li>
-            <li class="list-item">Un teléfono Huawei.</li>
-            <li class="list-item">20 viajes en taxi ($15.000 COP c/u).</li>
-            <li class="list-item">6 meses de licencia para Platzi.</li>
-            <li class="list-item">3 meses de oficinas.</li>
-          </ul>
-        </article>
-        <article class="awards-position">
-          <h3 class="position__number">Tercer lugar</h3>
-          <ul class="position__list">
-            <li class="list-item">$2.000.000 COP.</li>
-            <li class="list-item">Un teléfono Huawei.</li>
-            <li class="list-item">10 viajes en taxi ($15.000 COP c/u).</li>
-            <li class="list-item">6 meses de licencia para Platzi.</li>
-          </ul>
-        </article>
+        <div class="awards-position-container">
+          <article class="awards-position">
+            <h3 class="position__number number-one">Primer lugar</h3>
+            <ul class="position__list">
+              <li class="list-item">$5.000.000 COP.</li>
+              <li class="list-item">$10.000 USD IBM Cloud.</li>
+              <li class="list-item">Un teléfono Huawei.</li>
+              <li class="list-item">50 viajes en taxi ($15.000 COP c/u).</li>
+              <li class="list-item">1 año de licencia para Platzi.</li>
+              <li class="list-item">6 meses de oficinas.</li>
+            </ul>
+          </article>
+          <article class="awards-position">
+            <h3 class="position__number number-two">Segundo lugar</h3>
+            <ul class="position__list">
+              <li class="list-item">$3.000.000 COP.</li>
+              <li class="list-item">Un teléfono Huawei.</li>
+              <li class="list-item">20 viajes en taxi ($15.000 COP c/u).</li>
+              <li class="list-item">6 meses de licencia para Platzi.</li>
+              <li class="list-item">3 meses de oficinas.</li>
+            </ul>
+          </article>
+          <article class="awards-position">
+            <h3 class="position__number number-three">Tercer lugar</h3>
+            <ul class="position__list">
+              <li class="list-item">$2.000.000 COP.</li>
+              <li class="list-item">Un teléfono Huawei.</li>
+              <li class="list-item">10 viajes en taxi ($15.000 COP c/u).</li>
+              <li class="list-item">6 meses de licencia para Platzi.</li>
+            </ul>
+          </article>
+        </div>
       </section>
       <section id="register" class="main-form-container">
         <form action="#" class="form-register">
@@ -510,11 +561,11 @@
                 Av. Calle 9 (Av Americas) No. 50-15
               </h3>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63625.315004647484!2d-74.12995258476609!3d4.66833228186504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x8e3f9958ec390963%3A0xdcc1e960c3c70cbe!2sTAXTOTAL%2C%20Av.%20Calle%209%20(Av%20Americas)%20No.%2050-15%20Centro%20Comercial%20Carrera%2C%20Bogot%C3%A1!3m2!1d4.6261873!2d-74.1084989!5e0!3m2!1ses-419!2sco!4v1651086606008!5m2!1ses-419!2sco"
-                title="Ubicación de la oficina central"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63629.13084378425!2d-74.1433571208984!3d4.626060800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9958ec390963%3A0xdcc1e960c3c70cbe!2sTAXTOTAL!5e0!3m2!1ses-419!2sco!4v1651152690801!5m2!1ses-419!2sco"
                 width="400"
                 height="300"
                 style="border: 0"
+                title="Ubicación de la oficina central"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
