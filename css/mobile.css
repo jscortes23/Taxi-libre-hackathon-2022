@@ -76,7 +76,7 @@ main .main-start-container {
 .main-start-container .start__img {
     object-fit: contain;
     object-position: center;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
 }
 
 .main-start-container .start__title {
@@ -177,7 +177,7 @@ main .main-start-container {
 .main-where-is-container .where-is__title {
     font-size: var(--x-lg);
     font-weight: 600;
-    padding-top: 40px;
+    padding-top: 86px;
     background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -195,7 +195,7 @@ main .main-start-container {
 .main-where-is-container .where-is__list {
     font-size: var(--md);
     line-height: 2.6rem;
-    margin-bottom: 20px;
+    margin-bottom: 46px;
     margin-left: 28px;
 }
 
@@ -228,7 +228,7 @@ main .main-start-container {
 .main-objective-container .objective__list {
     font-size: var(--md);
     line-height: 2.6rem;
-    margin-bottom: 20px;
+    margin-bottom: 46px;
     margin-left: 28px;
 }
 
@@ -270,17 +270,100 @@ main .main-start-container {
     margin-left: 28px;
 }
 
+/* SECTION FORM REGISTER 
+************************************************************************/
+
+.main-form-container {
+    width: 100%;
+    height: auto;
+    padding: 40px 16px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.main-form-container .form-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-register .form__title {
+    text-align: center;
+    font-size: var(--x-lg);
+    font-weight: 600;
+    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(195,220,0,1) 48%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.form-register .lbl {
+    font-size: var(--md);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-register legend {
+    font-size: var(--md);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.form-register input {
+    padding: 8px;
+    margin-bottom: 42px;
+    font-size: var(--sm);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.form-register .radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: var(--sm);
+    margin-bottom: 42px;
+}
+
+.radio-container input {
+    margin-left: 12px;
+}
+
+.form-register .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: var(--sm);
+}
+
+.checkbox-container .input-checkbox {
+    margin: 0;
+}
+
+.form-register textarea {
+    width: 100%;
+    padding: 14px;
+    resize: none;
+    margin-bottom: 46px;
+}
+
+
+
+
 /* SECTION SPONSORS 
 ************************************************************************/
 
-.main-sponsor-container {
+aside {
     width: 100%;
     height: auto;
     padding: 0 16px;
+    margin-top: 46px;
     margin-bottom: 40px;
 }
 
-.main-sponsor-container .sponsor__title {
+aside .sponsor__title {
     font-size: 3.6rem;
     font-weight: 600;
     background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(195,220,0,1) 48%);
@@ -291,7 +374,7 @@ main .main-start-container {
     margin-bottom: 20px;   
 }
 
-.main-sponsor-container .sponsor-silder {
+aside .sponsor-silder {
     width: 100%;
     height: 140px;
     display: flex;
@@ -462,4 +545,29 @@ footer .footer-up {
 .item__info a[href*="tel:+"] {
     color: var(--font-color);
     font-weight: bold;
+}
+
+.footer-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-down .footer-politics {
+    margin-bottom: 8px;
+}
+
+.footer-politics a {
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 1.06rem;
+}
+
+.footer-down .footer-copyright {
+    margin-bottom: 16px;
+}
+
+.footer-copyright .copyright__info {
+    font-size: var(--sm);
 }

@@ -10,13 +10,13 @@
       content="La Hackathon Taxis Libres, un evento gratuito y 100% digital que dio solución a una serie de retos reales sobre movilidad en el país y en el que participaron más de 540 personas de diferentes regiones de Colombia y del mundo. Al final, fueron entregados más de $25.000 USD en beneficios."
     />
     <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/mobile.css" />
     <script src="/js/countdown.js" defer></script>
   </head>
   <body>
@@ -74,7 +74,7 @@
             <span id="countdown__seconds" class="countdown__number">0</span>
           </div>
         </div>
-        <a href="#" class="btn-primary">Quiero particiar</a>
+        <a href="#register" class="btn-primary">Quiero particiar</a>
       </section>
       <section class="main-where-is-container">
         <h2 class="where-is__title">¿Dónde sera el evento?</h2>
@@ -173,32 +173,269 @@
           </ul>
         </article>
       </section>
-      <section class="main-sponsor-container">
-        <h2 class="sponsor__title">Patrocinadores oficiales</h2>
-        <div class="sponsor-silder">
-          <img
-            src="/assets/imgs/Logo-Ministerio-de-Transporte.png"
-            alt="Logo del ministerio de transporte"
+      <section id="register" class="main-form-container">
+        <form action="#" class="form-register">
+          <legend class="form__title">¡Inscribite!</legend>
+          <label class="lbl" for="name">Nombre(s) *</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input-txt"
+            placeholder="Escriba su respuesta"
+            required
           />
-          <img
-            src="/assets/imgs/logo-Secretaria-Distrital-de-Movilidad.png"
-            alt="Logo de la secretaria de movilidad"
+          <label class="lbl" for="lastName">Apellido(s) *</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            class="input-txt"
+            placeholder="Escriba su respuesta"
+            required
           />
-          <img
-            src="/assets/imgs/logoAnsv.png"
-            alt="Logo de Agencia Nacional de Seguridad Vial"
+          <label class="lbl" for="typeDoc">Tipo de documento *</label>
+          <input
+            list="typeDoc"
+            name="typeDoc"
+            class="input-list"
+            placeholder="-Seleccione-"
+            required
           />
-          <img
-            src="/assets/imgs/LogoSIC-8.png"
-            alt="Logo de Superintendencia Industria y Comercio"
+          <datalist id="typeDoc">
+            <option value="CC - Cedula de ciudadanía"></option>
+            <option value="TI - Tarjeta de identidad"></option>
+            <option value="CE - Cedula de extranjería"></option>
+            <option value="PAP - Pasaporte"></option>
+          </datalist>
+          <label class="lbl" for="numberDoc"
+            >Número de documento de identidad *</label
+          >
+          <input
+            type="number"
+            name="numberDoc"
+            id="numberDoc"
+            class="input-num"
+            placeholder="Sólo números"
+            required
           />
-          <img
-            src="/assets/imgs/supertransporte.png"
-            alt="Logo de Supertransporte"
+          <label class="lbl" for="gender">Género *</label>
+          <input
+            list="gender"
+            name="gender"
+            class="input-list"
+            placeholder="-Seleccione-"
           />
-        </div>
+          <datalist id="gender">
+            <option value="Femenino"></option>
+            <option value="Masculino"></option>
+            <option value="Transgénero"></option>
+            <option value="No registra"></option>
+          </datalist>
+          <label class="lbl" for="dateBirth">Fecha de nacimiento *</label>
+          <input type="date" class="input-list" required />
+          <label class="lbl" for="email"
+            >Correo electrónico de contacto *</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-email"
+            placeholder="correo@mail.com"
+            required
+          />
+          <label class="lbl" for="phone">Número telefónico de contacto *</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            class="input-tel"
+            placeholder="Solo números"
+            required
+          />
+          <label class="lbl" for="city">Departamento *</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Escriba su ciudad"
+            required
+          />
+          <label class="lbl" for="studies"
+            >¿Qué nivel de estudios tienes? *</label
+          >
+          <input
+            list="studies"
+            name="studies"
+            class="input-list"
+            placeholder="-Seleccione-"
+            required
+          />
+          <datalist id="studies">
+            <option value="Sin estudios"></option>
+            <option value="Preescolar"></option>
+            <option value="Básica media"></option>
+            <option value="Superior pregrado"></option>
+            <option value="Superior posgrado"></option>
+            <option value="No registra"></option>
+          </datalist>
+          <label class="lbl" for="occupation">¿Cuál es tu ocupación? *</label>
+          <input
+            type="occupation"
+            name="occupation"
+            class="input-list"
+            placeholder="-Seleccione-"
+            required
+          />
+          <datalist id="occupation">
+            <option value="Desempleado"></option>
+            <option value="Empleado"></option>
+            <option value="En actividades no remuneradas"></option>
+            <option value="Estudiante"></option>
+            <option value="Independiente"></option>
+            <option value="No registra"></option>
+          </datalist>
+          <legend>Selecciona el área donde estás ubicado *</legend>
+          <div class="radio-container">
+            <label for="rural"
+              >Rural
+              <input
+                type="radio"
+                name="located"
+                id="rural"
+                value="rural"
+                required
+              />
+            </label>
+            <label for="urban"
+              >Urbano
+              <input type="radio" name="located" id="urban" value="urban" />
+            </label>
+          </div>
+          <legend>
+            En caso de ser elegido, ¿tienes disponibilidad de tiempo para los 3
+            días de la Hackathon? *
+          </legend>
+          <div class="radio-container">
+            <label for="yes"
+              >Si
+              <input type="radio" name="availability" id="yes" value="yes" />
+            </label>
+            <label for="no"
+              >No
+              <input type="radio" name="availability" id="no" value="no" />
+            </label>
+          </div>
+          <legend>
+            ¿En qué sector se encuentra tu principal área de experiencia? *
+          </legend>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="ing"
+              id="cbox1"
+              class="input-checkbox"
+              value="ing"
+            />
+            <label for="cbox1">
+              Ingenierías o desarrollo (Ingeniero de sistemas, ingeniero de
+              comunicaciones, desarrollador, programador, Analista de datos,
+              etc)</label
+            >
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="cie"
+              id="cbox2"
+              class="input-checkbox"
+              value="cie"
+            />
+            <label for="cbox2"
+              >Ciencias económicas (Financiero, economista, administrador de
+              empresas, etc)</label
+            >
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="art"
+              id="cbox3"
+              class="input-checkbox"
+              value="art"
+            />
+            <label for="cbox3"
+              >Artes, Diseño y Mercadeo (Diseñador, arquitecto, urbanista,
+              artista, publicista, mercadólogo)</label
+            >
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="hum"
+              id="cbox4"
+              class="input-checkbox"
+              value="hum"
+            />
+            <label for="cbox4"
+              >Humanidades (Sociólogo, antropólogo, periodista, comunicador
+              social, historiador, etc)</label
+            >
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="otr"
+              id="cbox5"
+              class="input-checkbox"
+              value="otr"
+            />
+            <label for="cbox5"
+              >Otro (otras áreas del conocimiento y/o conocimientos
+              empíricos)</label
+            >
+          </div>
+          <label class="lbl" for="txt-area"
+            >¿Qué te motiva a participar en este reto? *</label
+          >
+          <textarea
+            name="reason"
+            id="txt-area"
+            cols="30"
+            rows="10"
+            placeholder="Cuentanos tu motivación"
+            required
+          ></textarea>
+          <input type="submit" value="Enviar" class="btn-primary" />
+        </form>
       </section>
     </main>
+    <aside>
+      <h2 class="sponsor__title">Patrocinadores oficiales</h2>
+      <div class="sponsor-silder">
+        <img
+          src="/assets/imgs/Logo-Ministerio-de-Transporte.png"
+          alt="Logo del ministerio de transporte"
+        />
+        <img
+          src="/assets/imgs/logo-Secretaria-Distrital-de-Movilidad.png"
+          alt="Logo de la secretaria de movilidad"
+        />
+        <img
+          src="/assets/imgs/logoAnsv.png"
+          alt="Logo de Agencia Nacional de Seguridad Vial"
+        />
+        <img
+          src="/assets/imgs/LogoSIC-8.png"
+          alt="Logo de Superintendencia Industria y Comercio"
+        />
+        <img
+          src="/assets/imgs/supertransporte.png"
+          alt="Logo de Supertransporte"
+        />
+      </div>
+    </aside>
     <footer>
       <section class="footer-up">
         <div class="footer-about">
@@ -274,6 +511,7 @@
               </h3>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63625.315004647484!2d-74.12995258476609!3d4.66833228186504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x8e3f9958ec390963%3A0xdcc1e960c3c70cbe!2sTAXTOTAL%2C%20Av.%20Calle%209%20(Av%20Americas)%20No.%2050-15%20Centro%20Comercial%20Carrera%2C%20Bogot%C3%A1!3m2!1d4.6261873!2d-74.1084989!5e0!3m2!1ses-419!2sco!4v1651086606008!5m2!1ses-419!2sco"
+                title="Ubicación de la oficina central"
                 width="400"
                 height="300"
                 style="border: 0"
@@ -291,15 +529,14 @@
             </li>
             <li class="list-item">
               <h3 class="item__title">Correo</h3>
-              <a href="mailto:asuntosjudiciales@taxislibres.com.co">asuntosjudiciales@taxislibres.com.co</a>
+              <a href="mailto:asuntosjudiciales@taxislibres.com.co"
+                >asuntosjudiciales@taxislibres.com.co</a
+              >
             </li>
           </ul>
         </div>
       </section>
       <section class="footer-down">
-        <div class="footer-copyright">
-          <p class="copyright__info">&copy; 2019 - 2022 Taxis Libres.</p>
-        </div>
         <div class="footer-politics">
           <a
             href="https://www.taxislibres.com.co/nosotros"
@@ -311,14 +548,17 @@
             href="https://taxislibresonline.zendesk.com/hc/es/articles/4408270795405-Normatividad-en-los-taxis-"
             target="_blank"
             rel="noopener noreferrer"
-            >Normatividad</a
+            >| Normatividad |</a
           >
           <a
-            href="https://taxislibres.com.co/doc-taxislibres/politica-tratamiento-datos-taxis-libres.html"
+            href="https://www.taxislibres.com.co/doc-taxislibres/aviso-de-privacidad.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            >Politica de tratamiento de datos</a
+            >Politica anticurrupción</a
           >
+        </div>
+        <div class="footer-copyright">
+          <p class="copyright__info">&copy; 2019 - 2022 Taxis Libres.</p>
         </div>
       </section>
     </footer>
