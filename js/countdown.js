@@ -25,3 +25,9 @@ setInterval(() => {
     minutesCountdown.innerText = minutes
     secondsCountdown.innerText = ('0' + seconds).slice(-2)
 }, 500);
+
+var btn = document.getElementById('link')
+
+btn.addEventListener("click", () => {
+    document.getElementById('menu-header-mobile').style.display = "none";
+})

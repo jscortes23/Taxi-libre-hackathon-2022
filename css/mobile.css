@@ -47,7 +47,7 @@ header {
     background-color: #000000;
 }
 
-header .btn-menu {
+header .lbl-menu {
     width: 45px;
     height: 45px;
     margin-right: 16px;
@@ -57,12 +57,51 @@ header .btn-menu {
     background-size: 60% 60%;
     background-color: var(--secondary-color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* SECTION MENU HEADER 
 ************************************************************************/
+
+header input[id="menu"] {
+    display: none;
+}
+
+header .menu-header-mobile {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    display: none;
+}
+
+.menu-header-mobile .nav-menu-mobile {
+    list-style: none;
+    margin: 0;
+}
+
+.nav-menu-mobile .menu-item-mobile {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.menu-item-mobile a {
+    width: 100%;
+    padding: 0 40px;
+    font-size: var(--x-lg);
+    color: var(--font-color);
+}
+
 header .menu-header {
     display: none;
+}
+
+input[id="menu"]:checked ~ .menu-header-mobile {
+    display: initial;
 }
 
 /* SECTION BANNER MAIN 

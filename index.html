@@ -19,7 +19,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 540px)" />
-    <link rel="stylesheet" href="/css/desktop.css" media="(min-width: 1060px)" />
+    <link
+      rel="stylesheet"
+      href="/css/desktop.css"
+      media="(min-width: 1060px)"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap"
       rel="stylesheet"
@@ -74,7 +78,24 @@
   <body>
     <header>
       <img src="/assets/imgs/logo.png" alt="Logo de taxi libre" />
-      <span class="btn-menu"></span>
+      <input type="checkbox" id="menu" />
+      <label class="lbl-menu" for="menu"> </label>
+      <nav class="menu-header-mobile" id="menu-header-mobile">
+        <ul class="nav-menu-mobile">
+          <li class="menu-item-mobile">
+            <a id="link" href="#start">Inicio</a>
+          </li>
+          <li class="menu-item-mobile">
+            <a id="link" href="#when">Fecha</a>
+          </li>
+          <li class="menu-item-mobile">
+            <a id="link" href="#awards">Premios</a>
+          </li>
+          <li class="menu-item-mobile">
+            <a id="link" href="#register">Inscripción</a>
+          </li>
+        </ul>
+      </nav>
       <nav class="menu-header">
         <ul class="nav-menu">
           <li class="menu-item">
@@ -122,7 +143,8 @@
       <section id="when" class="main-when-is-container">
         <h2 class="when-is__title">¿Cuándo inicia?</h2>
         <p class="when-is__info">
-          Este evento virtual se llevará a cabo del <strong> 10 al 12 de junio de 2022 </strong>.
+          Este evento virtual se llevará a cabo del
+          <strong> 10 al 12 de junio de 2022 </strong>.
         </p>
         <br />
         <p class="when-is__info">
@@ -514,7 +536,8 @@
           <p class="about__info">
             Somos una compañía que va en pro de facilitar la prestación de un
             servicio de transporte legal, seguro, cómodo y eficiente.
-            Incorporamos tecnología para hacer cada viaje más seguro. Además, tomamos acciones para mitigar el contagio de Covid-19.
+            Incorporamos tecnología para hacer cada viaje más seguro. Además,
+            tomamos acciones para mitigar el contagio de Covid-19.
           </p>
         </div>
         <div class="footer-social-media">
